@@ -12,4 +12,4 @@ Following is a diagram of how all components work together:
 
 ![](/media/diagram_of_components.PNG)
 
-The code expects five values from the serial port and sends the data to room-monitoring-backend by doing a POST request on 'DataProcessing' endpoint.
+The code expects five values from the serial port and sends the data to [room-monitoring-backend](https://github.com/heidinv12/room-monitoring-backend) by doing a POST request on 'DataProcessing' endpoint.
