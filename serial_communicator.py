@@ -14,7 +14,7 @@ def call_data_processing_api(temp, hum, door, smoke, movement):
     headers = {
         'accept': 'application/json'
     }
-    url = 'DATA_PROCESSING_ENDPOINT_URL'
+    url = 'https://8ntyvo5f3a.execute-api.us-east-1.amazonaws.com/dev/processing'
     data = {"temperature": temp, "humidity": hum, "door": door, "smoke": smoke, "movement": movement}
     try:
         response = requests.post(url, headers=headers, data=json.dumps(data))
